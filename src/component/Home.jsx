@@ -26,96 +26,105 @@ function Home() {
         <>
 
 
-        
 
-            
+            <div className="bg-[url('/src/assets/pi.jpg')] h-screen bg-no-repeat bg-cover relative">
+      <div className="h-full w-full bg-black/70 absolute">
 
-            <div className="bg-[url('/src/assets/pi.jpg')] h-screen  bg-no-repeat bg-cover relative">
-                <div className='h-full w-full bg-black/70 absolute'>
-                    <div className='grid grid-cols-2 p-10' >
-                       <div className='flex'>
-                            <FaLocationDot size={60} className='text-green-500' />
-                            <h1 className='text-5xl text-green-500 font-medium'>Tourist  </h1>
-                       </div>
+        {/* TOP NAVBAR */}
+       <div className="grid grid-cols-2 p-10">
 
-                       <div className='md:flex hidden gap-4 mt-5 '>
-                        <Link to={'/'}><h1 className='text-2xl font-bold'>Home </h1></Link>
-                        <Link to={'/about'}><h1 className='text-2xl font-bold'>About </h1></Link>
-                        <Link to={'/service'}><h1 className='text-2xl font-bold'>Services </h1></Link>
-                       <Link to={'/package'}> <h1 className='text-2xl font-bold'>Packages </h1></Link>
-                        <Link to={'/contact'}><h1 className='text-2xl font-bold'>Contacts </h1></Link>
+  {/* Left Logo */}
+  <div className="flex items-center gap-2">
+    <FaLocationDot size={55} className="text-green-500" />
+    <h1 className="text-5xl text-green-500 font-medium">Tourist</h1>
+  </div>
 
-                        <div className='bg-green-600 w-24 h-10 rounded-3xl flex items-center justify-center'>
-                            <button className='text-xl font-black text-white'> Register</button>
+  {/* Desktop Menu */}
+  <div className="hidden xl:flex gap-6 justify-end items-center">
+    <Link to="/"><h1 className="text-2xl font-bold text-white">Home</h1></Link>
+    <Link to="/about"><h1 className="text-2xl font-bold text-white">About</h1></Link>
+    <Link to="/service"><h1 className="text-2xl font-bold text-white">Services</h1></Link>
+    <Link to="/package"><h1 className="text-2xl font-bold text-white">Packages</h1></Link>
+    <Link to="/contact"><h1 className="text-2xl font-bold text-white">Contacts</h1></Link>
 
-                        </div>
-                       </div>
+    <div className="bg-green-600 px-6 py-2 rounded-3xl">
+      <button className="text-xl font-black text-white">Register</button>
+    </div>
+  </div>
 
+  {/* Mobile Menu Icon */}
+  <div className="flex xl:hidden justify-end items-center">
+    <Menu
+      size={35}
+      className="text-white"
+      onClick={() => setopen(!open)}
+    />
 
-                       <div className='flex md:hidden gap-4 mt-5 '>
-                       <Menu className='bg-green-300 ms-28 -mt-2 ' onClick={()=>{setopen(!open) ; console.log("clicked" )
-                        
-                        }} />
+    {/* Mobile Drawer */}
+    {open && (
+      <motion.div
+        initial={{ x: -120 }}
+        animate={{ x: 0 }}
+        className="fixed top-0 left-0 h-screen w-40 p-5 bg-white shadow-xl z-50"
+      >
+        <div className="mt-16 grid gap-8">
+          <Link to="/" onClick={() => setopen(false)}>
+            <h1 className="text-xl font-bold">Home</h1>
+          </Link>
 
-         {open && <motion.div
-             initial={{x:-100}}
-             animate={{x:0}}
+          <Link to="/about" onClick={() => setopen(false)}>
+            <h1 className="text-xl font-bold">About</h1>
+          </Link>
 
-             className='fixed top-0 left-0 h-[110vh] w-32 px-4 g  bg-white backdrop-blur-xl'>
+          <Link to="/service" onClick={() => setopen(false)}>
+            <h1 className="text-xl font-bold">Services</h1>
+          </Link>
 
-                                 <div className='mt-16 grid gap-10'>
-                                <Link to='/'><h1 onClick={()=>setopen(!open)} className='text-2xl font-bold'>Home </h1></Link>
-                            <Link to='/about'><h1 onClick={()=>setopen(!open)}  className='text-2xl font-bold'>About </h1></Link>
-                            <Link to='/service'><h1 onClick={()=>setopen(!open)}  className='text-2xl font-bold'>Services </h1></Link>
-                           <Link to='/package'> <h1 onClick={()=>setopen(!open)}  className='text-2xl font-bold'>Packages </h1></Link>
-                            <Link to='/contact'><h1 onClick={()=>setopen(!open)}  className='text-2xl font-bold'>Contacts </h1></Link>
-                           
-                            <div className='bg-green-600 w-24 h-10 rounded-3xl flex items-center justify-center'>
-                                <button className='text-xl font-black text-white'> Register</button>
-    
-                            </div> 
-                            
-             </div>
-</motion.div>
-  }
-                        
+          <Link to="/package" onClick={() => setopen(false)}>
+            <h1 className="text-xl font-bold">Packages</h1>
+          </Link>
 
-                       </div>
+          <Link to="/contact" onClick={() => setopen(false)}>
+            <h1 className="text-xl font-bold">Contacts</h1>
+          </Link>
 
+          <div className="bg-green-600 px-4 py-2 rounded-3xl">
+            <button className="text-xl font-black text-white">Register</button>
+          </div>
+        </div>
+      </motion.div>
+    )}
+  </div>
 
-
-
-                       <div>
-
-                       </div>
-                    </div>
-
-
-                    <h1 className='md:text-7xl text-4xl text-center mt-52 font-bold text-white' >Enjoy Your Vacation With Us</h1>
-                    <h1 className='mt-8 text-white text-2xl font-medium text-center'>Tempor erat elitr rebum at clita diam amet diam et eos erat ipsum lorem sit</h1>
-
-                    <div className='flex justify-center md:mt-8 mt-7'>
-                        <div className='bg-white md:w-[600px]  md:flex items-center  h-16 rounded-4xl shadow'>
-
-                            <input type="text" placeholder='Eg:India' className='ms-10 text-xl mt-5 md:mt-0   outline-hidden' />
-
-                            <div className='bg-green-600 w-24 ms-52 md:-mt-0 -mt-9  md:ms-56 rounded-4xl flex items-center justify-center text-white text-xl font-bold h-10'>Serach</div>
-    
-                        </div>
-                    </div>
+</div>
 
 
+        {/* HERO TEXT */}
+        <h1 className="md:text-7xl text-4xl text-center mt-40 font-bold text-white px-3">
+          Enjoy Your Vacation With Us
+        </h1>
 
+        <h1 className="mt-6 text-white text-2xl font-medium text-center px-3">
+          Tempor erat elitr rebum at clita diam amet diam et eos erat ipsum lorem sit
+        </h1>
 
-                    </div>
-                    
+        {/* SEARCH BAR */}
+        <div className="flex justify-center mt-10 px-3">
+          <div className="bg-white md:w-[600px] w-full flex items-center h-16 rounded-4xl px-4 shadow">
+            <input
+              type="text"
+              placeholder="Eg: India"
+              className="flex-grow text-xl outline-none"
+            />
 
-
-
-            
-
-
+            <div className="bg-green-600 px-6 py-2 rounded-3xl text-white text-xl font-bold">
+              Search
             </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
             
             

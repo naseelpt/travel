@@ -7,60 +7,41 @@ function Header() {
   return (
     <>
 
-    <div className='bg-black md:flex hidden  items-center md:grid-cols-2 h-14'>
-
-     <div className='flex ms-20 gap-3'>
-        <div className='flex'>
-          <BiLocationPlus color='white' size={30}/>
-          <h1 className='text-white'>123 Street, New York, USA</h1>
-        </div>
-
-        <div className='flex'>
-          <FaPhoneAlt color='white'  size={20}/>
-          <h1 className='text-white'>+012 345 6789</h1>
-        </div>
-
-        <div className='flex'>
-          <BiMailSend color='white'  size={30}/>
-          <h1 className='text-white'>mail@domain.com</h1>
-        </div>
-     </div>
-
-
-     <div className='flex ms-[600px]  gap-3'>
-
-      <div className='bg-white w-10 h-10 rounded-4xl flex items-center justify-center'>
-        <div className='bg-black w-9.5 h-9.5 rounded-4xl flex items-center justify-center'>
-          <FaInstagram color='white' size={25}/>
-        </div>
-      </div>
-
-      <div className='bg-white w-10 h-10 rounded-4xl flex items-center justify-center'>
-        <div className='bg-black w-9.5 h-9.5 rounded-4xl flex items-center justify-center'>
-          <FaWhatsapp color='white' size={25}/>
-        </div>
-      </div>
-
-      <div className='bg-white w-10 h-10 rounded-4xl flex items-center justify-center'>
-        <div className='bg-black w-9.5 h-9.5 rounded-4xl flex items-center justify-center'>
-          <FaLinkedin color='white' size={25}/>
-        </div>
-      </div>
-
-      <div className='bg-white w-10 h-10 rounded-4xl flex items-center justify-center'>
-        <div className='bg-black w-9.5 h-9.5 rounded-4xl flex items-center justify-center'>
-          <FaFacebook color='white' size={25}/>
-        </div>
-      </div>
-
-      <div className='bg-white w-10 h-10 rounded-4xl flex items-center justify-center'>
-        <div className='bg-black w-9.5 h-9.5 rounded-4xl flex items-center justify-center'>
-          <FaTwitter color='white' size={25}/>
-        </div>
-      </div>
-
-     </div>
+   <div className="bg-black md:flex hidden items-center h-12 w-full px-2">
+  
+  <div className="flex gap-3 flex-wrap">
+    <div className="flex items-center gap-2">
+      <BiLocationPlus color="white" size={25} />
+      <h1 className="text-white text-sm">123 Street, New York, USA</h1>
     </div>
+
+    <div className="flex items-center gap-2">
+      <FaPhoneAlt color="white" size={18} />
+      <h1 className="text-white text-sm">+012 345 6789</h1>
+    </div>
+
+    <div className="flex items-center gap-2">
+      <BiMailSend color="white" size={25} />
+      <h1 className="text-white text-sm">mail@domain.com</h1>
+    </div>
+  </div>
+
+  <div className="flex gap-3 ml-auto">
+    {[FaInstagram, FaWhatsapp, FaLinkedin, FaFacebook, FaTwitter].map(
+      (Icon, index) => (
+        <div
+          key={index}
+          className="bg-white w-10 h-10 rounded-full flex items-center justify-center"
+        >
+          <div className="bg-black w-9 h-9 rounded-full flex items-center justify-center">
+            <Icon color="white" size={22} />
+          </div>
+        </div>
+      )
+    )}
+  </div>
+</div>
+
 
 
 

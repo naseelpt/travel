@@ -7,353 +7,295 @@ import { motion } from "motion/react"
 
 function Packages() {
     return (
-        <div className='mt-20'>
 
+        <div className="mt-20">
 
-            <div className='flex justify-center ms-2 '>
-                <div className='bg-green-500 h-1 mt-2 w-10 mx-1.5'>
-                    <div className='bg-green-500 h-0.5 w-16 mt-3 -ms-6'></div>
-                </div>
-                <h1 className='font-bold text-xl text-green-500'>PACKAGES</h1>
-                <div className='bg-green-500 h-1 mt-2 ms-2 w-10'>
-                    <div className='bg-green-500 h-0.5 w-16 mt-3'></div>
-                </div>
-            </div>
+  {/* Heading */}
+  <div className="flex justify-center items-center gap-3">
+    <div>
+      <div className="bg-green-500 h-1 w-10"></div>
+      <div className="bg-green-500 h-0.5 w-16 -mt-3 ms-2"></div>
+    </div>
 
+    <h1 className="font-bold text-xl text-green-500">PACKAGES</h1>
 
+    <div>
+      <div className="bg-green-500 h-1 w-10"></div>
+      <div className="bg-green-500 h-0.5 w-16 -mt-3 ms-2"></div>
+    </div>
+  </div>
 
-            <h1 className='font-bold text-center md:text-4xl text-4xl mt-4 '>Awesome Packages</h1>
+  {/* Title */}
+  <h1 className="font-bold text-center text-4xl mt-4">Awesome Packages</h1>
 
+  {/* Packages Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10 mt-16 px-6 xl:px-28">
 
+    {/* Card 1 */}
+    <motion.div
+      initial={{ opacity: 0, y: 300 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-full max-w-sm mx-auto"
+    >
+      <img
+        src={t}
+        alt=""
+        className="w-full h-60 object-cover rounded-t-xl"
+      />
 
+      <div className="bg-white shadow-2xl w-full p-5 rounded-b-xl">
 
+        {/* Info Row */}
+        <div className="grid grid-cols-3 text-center">
+          <div className="flex justify-center items-center gap-1">
+            <FaMapMarkerAlt className="text-green-500" />
+            <p className="text-black/70">Thailand</p>
+          </div>
 
+          <div className="flex justify-center items-center gap-1">
+            <FaCalendarAlt className="text-green-500" />
+            <p className="text-black/70">3 days</p>
+          </div>
 
-            <div className='grid md:grid-cols-3 mt-16 md:px-28 '>
-
-
-              <motion.div
-               initial={{ opacity: 0, y: 300 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               transition={{ duration: '0.5' }}
-
-
-              
-              >
-                  
-                        <div>
-                            <img src={t} alt="no image" className='md:w-96 w-[350px] px-3 md:px-0 ms-1.5 md:ms-0 md:h-60' />
-                            <div className='bg-white h-80 shadow-2xl md:w-96'>
-        
-                                <div className='bg-white md:w-[383px] h-10 w-[350px] grid grid-cols-3 '>
-                                    <div className=' flex justify-center items-center '>
-                                        <FaMapMarkerAlt className='text-green-500' size={20} />
-                                        <h1 className=' text-black/70'> Thailand</h1>
-                                    </div>
-        
-                                    <div className=' flex justify-center items-center '>
-                                        <FaCalendarAlt className='text-green-500' size={20} />
-                                        <h1 className=' text-black/70 ms-1'> 3 days</h1>
-                                    </div>
-        
-                                    <div className=' flex justify-center items-center '>
-                                        <FaUser className='text-green-500' size={20} />
-                                        <h1 className=' text-black/70 ms-1'> 3 person</h1>
-                                    </div>
-                                </div>
-        
-        
-                                <div className='mt-10'>
-        
-                                    <div>
-        
-                                        <h1 className='text-center md:text-4xl text-3xl  font-bold'>$149.00</h1>
-                                        <div className='flex justify-center mt-2'>
-                                            <FaStar className='text-green-500' size={20} />
-                                            <FaStar className='text-green-500' size={20} />
-                                            <FaStar className='text-green-500' size={20} />
-                                            <FaStar className='text-green-500' size={20} />
-                                            <FaStar className='text-green-500' size={20} />
-                                        </div>
-        
-                                        <p className='px-10 md:ms-0 ms-2 pt-4 font-bold text-black/50'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam</p>
-        
-        
-                                        <div className='mt-10'>
-        
-                                            <div className='flex gap-0.5 justify-center'>
-        
-                                                <button className='w-28 h-8 bg-green-500 rounded-l-4xl font-bold text-white'>Read more</button>
-                                                <button className='w-28 h-8 bg-green-500 rounded-r-4xl font-bold text-white'>Book now</button>
-        
-        
-                                            </div>
-        
-        
-                                        </div>
-        
-        
-                                    </div>
-        
-        
-                                </div>
-        
-        
-                            </div>
-        
-                        </div>
-
-
-
-              </motion.div >
-               
-
-               <motion.div
-                initial={{ opacity: 0, y: 300 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: '1' }}
-
-
-               >
-                    <div className='md:ms-5'>
-                        <img src={i} alt="no image" className='md:w-96 w-[350px] px-3 md:px-0 ms-1.5 md:ms-0 md:h-60' />
-                        <div className='bg-white  h-80 shadow-2xl md:w-96'>
-    
-                            <div className='bg-white md:w-[383px] h-10 w-[350px] grid grid-cols-3 md:-ms-0  '>
-                                <div className=' flex justify-center items-center '>
-                                    <FaMapMarkerAlt className='text-green-500' size={20} />
-                                    <h1 className=' text-black/70'> indonesia</h1>
-                                </div>
-    
-                                <div className=' flex justify-center items-center '>
-                                    <FaCalendarAlt className='text-green-500' size={20} />
-                                    <h1 className=' text-black/70 ms-1'> 5 days</h1>
-                                </div>
-    
-                                <div className=' flex justify-center items-center '>
-                                    <FaUser className='text-green-500' size={20} />
-                                    <h1 className=' text-black/70 ms-1'> 4 person</h1>
-                                </div>
-                            </div>
-    
-    
-                            <div className='mt-10'>
-    
-                                <div>
-    
-                                    <h1 className='text-center md:text-4xl text-3xl  font-bold'>$169.00</h1>
-                                    <div className='flex justify-center mt-2'>
-                                        <FaStar className='text-green-500' size={20} />
-                                        <FaStar className='text-green-500' size={20} />
-                                        <FaStar className='text-green-500' size={20} />
-                                        <FaStar className='text-green-500' size={20} />
-                                        <FaStar className='text-green-500' size={20} />
-                                    </div>
-    
-                                    <p className='px-10 pt-4 md:ms-0 ms-2 font-bold text-black/50'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam</p>
-    
-    
-                                    <div className='mt-10'>
-    
-                                        <div className='flex gap-0.5 justify-center'>
-    
-                                            <button className='w-28 h-8 bg-green-500 rounded-l-4xl font-bold text-white'>Read more</button>
-                                            <button className='w-28 h-8 bg-green-500 rounded-r-4xl font-bold text-white'>Book now</button>
-    
-    
-                                        </div>
-    
-    
-                                    </div>
-    
-    
-                                </div>
-    
-    
-                            </div>
-    
-    
-                        </div>
-    
-                    </div>
-               </motion.div >
-
-
-               <motion.div
-                initial={{ opacity: 0, y: 300 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: '1.5' }}
-               >
-                    <div className='md:ms-9'>
-                        <img src={m} alt="no image" className='md:w-96 w-[350px] px-3 md:px-0 ms-1.5 md:ms-0 md:h-60' />
-                        <div className='bg-white h-80 shadow-2xl md:w-96'>
-    
-                            <div className='bg-white md:w-[383px] h-10 w-[350px] grid grid-cols-3 md:-ms-0  '>
-                                <div className=' flex justify-center items-center '>
-                                    <FaMapMarkerAlt className='text-green-500' size={20} />
-                                    <h1 className=' text-black/70'> malaysia</h1>
-                                </div>
-    
-                                <div className=' flex justify-center items-center '>
-                                    <FaCalendarAlt className='text-green-500' size={20} />
-                                    <h1 className=' text-black/70 ms-1'> 7 days</h1>
-                                </div>
-    
-                                <div className=' flex justify-center items-center '>
-                                    <FaUser className='text-green-500' size={20} />
-                                    <h1 className=' text-black/70 ms-1'> 7 person</h1>
-                                </div>
-                            </div>
-    
-    
-                            <div className='mt-10'>
-    
-                                <div>
-    
-                                    <h1 className='text-center md:text-4xl text-3xl font-bold'>$299.00</h1>
-                                    <div className='flex justify-center mt-2'>
-                                        <FaStar className='text-green-500' size={20} />
-                                        <FaStar className='text-green-500' size={20} />
-                                        <FaStar className='text-green-500' size={20} />
-                                        <FaStar className='text-green-500' size={20} />
-                                        <FaStar className='text-green-500' size={20} />
-                                    </div>
-    
-                                    <p className='px-10 pt-4 font-bold md:ms-0 ms-2 text-black/50'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam</p>
-    
-    
-                                    <div className='mt-10'>
-    
-                                        <div className='flex gap-0.5 justify-center'>
-    
-                                            <button className='w-28 h-8 bg-green-500 rounded-l-4xl font-bold text-white'>Read more</button>
-                                            <button className='w-28 h-8 bg-green-500 rounded-r-4xl font-bold text-white'>Book now</button>
-    
-    
-                                        </div>
-    
-    
-                                    </div>
-    
-    
-                                </div>
-    
-    
-                            </div>
-    
-    
-                        </div>
-    
-                    </div>
-               </motion.div>
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-            <div className='md:p-28'>
-
-
-               <motion.div
-                initial={{ opacity: 0, y: 200 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: '1' }}
-               
-               >
-                    <div className='b md:h-[90vh] h-[1150px]  '>
-                        <div className='bg-black/50  md:h-[90vh] h-[1150px]'>
-    
-                            <div className='grid md:grid-cols-2'>
-    
-                                <div className='md:mt-32 mt-10 text-white md:ms-20'>
-    
-                                    <h1 className='text-3xl md:ms-0 ms-28 font-bold'>BOOKING</h1>
-                                    <h1 className='md:text-6xl text-4xl  md:ms-0 ms-12 mt-4 font-bold'>Online Booking</h1>
-                                    <p className='font-bold md:px-0 px-2 md:ms-0 ms-2 mt-7'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam ametdiam et eos. Clita erat ipsum et lorem et sit.</p>
-                                    <p className='font-bold md:px-0 px-2 md:ms-0 ms-2  mt-7'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-    
-                                    <button className='outline w-48 h-16 md:marker: ms-20 mt-16 text-xl font-bold'>Read More</button>
-    
-    
-                                </div>
-    
-    
-    
-                                <div className='mt-24 md:ms-10 ms-13 text-white'>
-                                    <h1 className='md:text-5xl text-4xl md:ms-0 ms-8 font-bold '>Book A Tour</h1>
-    
-                                    <div className='grid md:grid-cols-2'>
-    
-                                        <div className='mt-8 w-64 h-16 outline'>
-                                            <input type="text" placeholder='Your Name' className='outline-hidden mt-4 ms-5' />
-    
-                                        </div>
-    
-                                        <div className='mt-8 w-64 h-16 outline'>
-                                            <input type="text" placeholder='Your Email' className='outline-hidden mt-4 ms-5' />
-    
-                                        </div>
-    
-                                        <div className='mt-8 w-64 h-16 outline'>
-                                            <input type="text" placeholder='Date && Time' className='outline-hidden mt-4 ms-5' />
-    
-                                        </div>
-    
-                                        <div className='mt-8 w-64 h-16 outline'>
-                                            <input type="text" placeholder='Destination' className='outline-hidden mt-4 ms-5' />
-    
-                                        </div>
-    
-                                    </div>
-    
-                                    <div className='text-white mt-8'>
-                                        <div className='md:w-[560px] w-64 h-24 outline'>
-                                            <input type="text" placeholder='Special Requast ' className='mt-5 ms-5 outline-hidden' />
-                                        </div>
-    
-                                    </div>
-    
-                                    <div className='text-white mt-8'>
-                                        <div className='md:w-[560px] w-64 flex items-center justify-center h-16 outline'>
-                                            <button className='text-xl font-bold'>Book Now</button>
-                                        </div>
-    
-                                    </div>
-                                </div>
-    
-                            </div>
-    
-    
-    
-    
-                        </div>
-                    </div>
-    
-               </motion.div>
-
-
-
-
-
-
-
-            </div> 
-
-
-
-
-
-    
-
-
+          <div className="flex justify-center items-center gap-1">
+            <FaUser className="text-green-500" />
+            <p className="text-black/70">3 person</p>
+          </div>
         </div>
+
+        <div className="mt-5">
+          <h1 className="text-center text-3xl font-bold">$149.00</h1>
+
+          <div className="flex justify-center mt-2">
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+          </div>
+
+          <p className="text-center mt-4 text-black/50 font-bold px-3">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+          </p>
+
+          <div className="flex justify-center gap-1 mt-6">
+            <button className="w-28 h-9 bg-green-500 rounded-l-full text-white font-bold">
+              Read more
+            </button>
+            <button className="w-28 h-9 bg-green-500 rounded-r-full text-white font-bold">
+              Book now
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </motion.div>
+
+    {/* -------- Duplicate Cards Below (2 & 3) ---------- */}
+    {/* Card 2 */}
+    <motion.div
+      initial={{ opacity: 0, y: 300 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="w-full max-w-sm mx-auto"
+    >
+      <img
+        src={i}
+        alt=""
+        className="w-full h-60 object-cover rounded-t-xl"
+      />
+
+      <div className="bg-white shadow-2xl w-full p-5 rounded-b-xl">
+
+        <div className="grid grid-cols-3 text-center">
+          <div className="flex justify-center items-center gap-1">
+            <FaMapMarkerAlt className="text-green-500" />
+            <p className="text-black/70">Indonesia</p>
+          </div>
+
+          <div className="flex justify-center items-center gap-1">
+            <FaCalendarAlt className="text-green-500" />
+            <p className="text-black/70">5 days</p>
+          </div>
+
+          <div className="flex justify-center items-center gap-1">
+            <FaUser className="text-green-500" />
+            <p className="text-black/70">4 person</p>
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <h1 className="text-center text-3xl font-bold">$169.00</h1>
+
+          <div className="flex justify-center mt-2">
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+          </div>
+
+          <p className="text-center mt-4 text-black/50 font-bold px-3">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+          </p>
+
+          <div className="flex justify-center gap-1 mt-6">
+            <button className="w-28 h-9 bg-green-500 rounded-l-full text-white font-bold">
+              Read more
+            </button>
+            <button className="w-28 h-9 bg-green-500 rounded-r-full text-white font-bold">
+              Book now
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </motion.div>
+
+    {/* Card 3 */}
+    <motion.div
+      initial={{ opacity: 0, y: 300 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
+      className="w-full max-w-sm mx-auto"
+    >
+      <img
+        src={m}
+        alt=""
+        className="w-full h-60 object-cover rounded-t-xl"
+      />
+
+      <div className="bg-white shadow-2xl w-full p-5 rounded-b-xl">
+
+        <div className="grid grid-cols-3 text-center">
+          <div className="flex justify-center items-center gap-1">
+            <FaMapMarkerAlt className="text-green-500" />
+            <p className="text-black/70">Malaysia</p>
+          </div>
+
+          <div className="flex justify-center items-center gap-1">
+            <FaCalendarAlt className="text-green-500" />
+            <p className="text-black/70">7 days</p>
+          </div>
+
+          <div className="flex justify-center items-center gap-1">
+            <FaUser className="text-green-500" />
+            <p className="text-black/70">7 person</p>
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <h1 className="text-center text-3xl font-bold">$299.00</h1>
+
+          <div className="flex justify-center mt-2">
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+            <FaStar className="text-green-500" />
+          </div>
+
+          <p className="text-center mt-4 text-black/50 font-bold px-3">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+          </p>
+
+          <div className="flex justify-center gap-1 mt-6">
+            <button className="w-28 h-9 bg-green-500 rounded-l-full text-white font-bold">
+              Read more
+            </button>
+            <button className="w-28 h-9 bg-green-500 rounded-r-full text-white font-bold">
+              Book now
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </motion.div>
+  </div>
+
+
+  {/* Booking Section */}
+  <div className="p-10 md:p-28">
+    <motion.div
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="relative min-h-screen b"
+    >
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      <div className="relative grid md:grid-cols-2 gap-10 text-white p-5">
+
+        {/* Left Text */}
+        <div className="md:mt-28 mt-10">
+          <h1 className="text-3xl font-bold text-center md:text-left">BOOKING</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mt-4 text-center md:text-left">
+            Online Booking
+          </h1>
+
+          <p className="font-bold mt-7 px-3 md:px-0">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+          </p>
+          <p className="font-bold mt-5 px-3 md:px-0">
+            Aliqu diam amet diam et eos. Clita erat ipsum et lorem sit lorem.
+          </p>
+
+          <button className="mt-10 border px-10 py-4 font-bold block mx-auto md:mx-0">
+            Read More
+          </button>
+        </div>
+
+        {/* Booking Form */}
+        <div className="mt-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left mb-6">
+            Book A Tour
+          </h1>
+
+          <div className="grid md:grid-cols-2 gap-5">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full bg-transparent border p-4"
+            />
+
+            <input
+              type="text"
+              placeholder="Your Email"
+              className="w-full bg-transparent border p-4"
+            />
+
+            <input
+              type="text"
+              placeholder="Date & Time"
+              className="w-full bg-transparent border p-4"
+            />
+
+            <input
+              type="text"
+              placeholder="Destination"
+              className="w-full bg-transparent border p-4"
+            />
+          </div>
+
+          <div className="mt-5">
+            <textarea
+              placeholder="Special Request"
+              className="w-full bg-transparent border p-4 h-24"
+            ></textarea>
+          </div>
+
+          <button className="w-full bg-transparent border p-4 font-bold mt-5">
+            Book Now
+          </button>
+        </div>
+
+      </div>
+    </motion.div>
+  </div>
+</div>
+
+       
     )
 }
 

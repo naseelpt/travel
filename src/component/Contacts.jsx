@@ -8,197 +8,98 @@ import eee from '../assets/w2.jpg'
 
 function Contacts() {
     return (
-        <div className='mt-20'>
-
-
-            <div className='bg-gray-900 md:h-[400px] h-[1000px] grid pt-16 md:px-28 text-white md:grid-cols-4'>
-
-                <div className=''>
-
-                    <h1 className='text-3xl font-bold md:ms-0 ms-28'>Company</h1>
-
-                    <div className='mt-5 grid gap-3 md:ms-0 ms-8'>
-                        <div className='flex items-center gap-2'>
-                            <FiArrowRight size={15} />
-
-                            <h1 className=''>About Us</h1>
-
-                        </div>
-
-                        <div className='flex items-center gap-2'>
-                            <FiArrowRight size={15} />
-
-                            <h1 className=''>Contact Us</h1>
-
-                        </div>
-
-                        <div className='flex items-center gap-2'>
-                            <FiArrowRight size={15} />
-
-                            <h1 className=''>Privacy Policy</h1>
-
-                        </div>
-
-                        <div className='flex items-center gap-2'>
-                            <FiArrowRight size={15} />
-
-                            <h1 className=''>Teams && Condition</h1>
-
-                        </div>
-
-                        <div className='flex items-center gap-2'>
-                            <FiArrowRight size={15} />
-
-                            <h1 className=''>FAQs && Help</h1>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-                <div className='md:mt-0 mt-5'>
-                    <h1 className='text-3xl md:ms-0 ms-28 font-bold'>Contact</h1>
-
-                    <div className='grid md:ms-0 ms-8 mt-5 gap-3'>
-
-                        <div className='flex items-center'>
-                            <BiLocationPlus color='white' size={30} />
-                            <h1 className='text-white'>123 Street, New York, USA</h1>
-                        </div>
-
-                        <div className='flex items-center'>
-                            <FaPhoneAlt color='white' size={20} />
-                            <h1 className='text-white'>+012 345 6789</h1>
-                        </div>
-
-                        <div className='flex items-center'>
-                            <BiMailSend color='white' size={30} />
-                            <h1 className='text-white'>mail@domain.com</h1>
-                        </div>
-
-                    </div>
-
-                    <div className='flex md:ms-0 ms-8 mt-4 gap-3'>
-
-                        <div className='bg-white w-10 h-10 rounded-4xl flex items-center justify-center'>
-                            <div className='bg-black w-9.5 h-9.5 rounded-4xl flex items-center justify-center'>
-                                <FaTwitter color='white' size={20} />
-                            </div>
-                        </div>
-
-                        <div className='bg-white w-10 h-10 rounded-4xl flex items-center justify-center'>
-                            <div className='bg-black w-9.5 h-9.5 rounded-4xl flex items-center justify-center'>
-                                <FaFacebook color='white' size={20} />
-                            </div>
-                        </div>
-
-                        <div className='bg-white w-10 h-10 rounded-4xl flex items-center justify-center'>
-                            <div className='bg-black w-9.5 h-9.5 rounded-4xl flex items-center justify-center'>
-                                <FaLinkedin color='white' size={20} />
-                            </div>
-                        </div>
-
-                        <div className='bg-white w-10 h-10 rounded-4xl flex items-center justify-center'>
-                            <div className='bg-black w-9.5 h-9.5 rounded-4xl flex items-center justify-center'>
-                                <FaYoutube color='white' size={20} />
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div>
-                    <h1 className='text-3xl md:mt-0 mt-8 md:ms-0 ms-28 font-bold'>Gallery</h1>
-
-                    <div className='mt-5'>
-                        <div className='flex gap-2 md:ms-0 ms-7.5 grid-cols-3'>
-
-                            <div className='bg-white p-1 w-24 h-16'>
-                                <img src={e} alt="no image" className='h-[55px] w-[102px]' />
-                            </div>
-
-                            <div className='bg-white p-1 w-24 h-16'>
-                                <img src={ee} alt="no image" className='h-[55px] w-[102px]' />
-                            </div>
-
-                            <div className='bg-white p-1 w-24 h-16'>
-                                <img src={eee} alt="no image" className='h-[55px] w-[102px]' />
-                            </div>
-
-
-
-                        </div>
-
-
-                        <div className='flex gap-2 mt-3 md:ms-0 ms-7.5 grid-cols-3'>
-
-                            <div className='bg-white p-1 w-24 h-16'>
-                                <img src={eee} alt="no image" className='h-[55px] w-[102px]' />
-                            </div>
-
-                            <div className='bg-white p-1 w-24 h-16'>
-                                <img src={ee} alt="no image" className='h-[55px] w-[102px]' />
-                            </div>
-
-                            <div className='bg-white p-1 w-24 h-16'>
-                                <img src={e} alt="no image" className='h-[55px] w-[102px]' />
-                            </div>
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-                    </div>
-
-                </div>
-
-
-                <div className='ms-5 md:mt-0 mt-8'>
-                <h1 className='text-3xl md:ms-0 ms-20 font-bold'>News Letter</h1>
-
-                <p className=' md:mt-5 mt-3 px-8 md:px-0 text-xl'>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-
-                <div className='bg-white md:w-[270px] w-[260px] flex items-center md:mt-7 mt-5   md:ms-0 ms-9 h-14 shadow'>
-
-                            <input type="text" placeholder='Your email' className='  placeholder-black/70 ms-5 outline-hidden' />
-
-                            <div className='bg-green-500 w-24 md:-ms-8 -ms-12 flex items-center justify-center text-white  font-bold h-10'>SignUp</div>
-    
-                        </div>
-
-                </div>
-
-
-                <hr className='w-[1270px] md:flex hidden' />
-
-               
-            </div>
-
-
-
-            {/* <h1 className='-mt-10 ms-[110px] text-white'>© Your Site Name, All Rights Reserved. Designed By HTML Codex</h1> */}
-
-
-
-            
-
-
-
-
-
-
+       <div className="mt-20">
+
+  <div className="bg-gray-900 text-white pt-16 px-6 md:px-20 lg:px-28 
+                  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 md:h-auto pb-10">
+
+    {/* Company */}
+    <div>
+      <h1 className="text-3xl font-bold">Company</h1>
+
+      <div className="mt-5 grid gap-3">
+        {["About Us", "Contact Us", "Privacy Policy", "Terms & Conditions", "FAQ & Help"].map((item, i) => (
+          <div className="flex items-center gap-2" key={i}>
+            <FiArrowRight size={15} />
+            <h1>{item}</h1>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Contact */}
+    <div>
+      <h1 className="text-3xl font-bold">Contact</h1>
+
+      <div className="mt-5 grid gap-3">
+        <div className="flex items-center gap-2">
+          <BiLocationPlus size={25} />
+          <h1>123 Street, New York, USA</h1>
         </div>
+
+        <div className="flex items-center gap-2">
+          <FaPhoneAlt size={20} />
+          <h1>+012 345 6789</h1>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <BiMailSend size={25} />
+          <h1>mail@domain.com</h1>
+        </div>
+      </div>
+
+      {/* Social Icons */}
+      <div className="flex gap-3 mt-4">
+        {[FaTwitter, FaFacebook, FaLinkedin, FaYoutube].map((Icon, i) => (
+          <div className="bg-white w-10 h-10 rounded-full flex items-center justify-center" key={i}>
+            <div className="bg-black w-9 h-9 rounded-full flex items-center justify-center">
+              <Icon size={18} color="white" />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Gallery */}
+    <div>
+      <h1 className="text-3xl font-bold">Gallery</h1>
+
+      <div className="mt-5 grid grid-cols-3 gap-3">
+        {[e, ee, eee, eee, ee, e].map((img, i) => (
+          <div className="bg-white p-1 h-16" key={i}>
+            <img src={img} alt="gallery" className="w-full h-full object-cover" />
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Newsletter */}
+    <div>
+      <h1 className="text-3xl font-bold">Newsletter</h1>
+
+      <p className="mt-4 text-lg">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+
+      <div className="bg-white mt-6 w-full h-14 flex items-center overflow-hidden rounded-lg shadow">
+        <input 
+          type="text" 
+          placeholder="Your email" 
+          className="placeholder-black/70 px-4 w-full text-black outline-none"
+        />
+
+        <button className="bg-green-500 text-white font-bold px-5 h-full">
+          Sign Up
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  {/* Bottom Line */}
+  <div className="text-center text-gray-300 text-sm py-4 bg-gray-900">
+    © Your Site Name, All Rights Reserved.
+  </div>
+</div>
+
     )
 }
 
