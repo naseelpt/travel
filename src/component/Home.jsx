@@ -117,7 +117,7 @@ function Home() {
               className="flex-grow text-xl outline-none"
             />
 
-            <div className="bg-green-600 px-6 py-2 rounded-3xl text-white text-xl font-bold">
+            <div className="bg-green-600 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-1 xl:py-2 lg:py-2 md:py-2 sm:py-1 py-1 rounded-3xl text-white text-xl font-bold">
               Search
             </div>
           </div>
