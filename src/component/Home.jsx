@@ -110,7 +110,7 @@ function Home() {
 
         {/* SEARCH BAR */}
        <div className="flex justify-center mt-10 px-3">
-  <div className="bg-white w-full max-w-[600px] flex items-center min-h-[48px] rounded-full px-3 sm:px-4 shadow">
+  <div className="bg-white w-full max-w-[600px] flex items-center min-h-[64px] rounded-full px-3 sm:px-4 shadow">
 
     {/* INPUT */}
     <input
