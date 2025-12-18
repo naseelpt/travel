@@ -109,7 +109,7 @@ function Home() {
         </h1>
 
         {/* SEARCH BAR */}
-        <div className="flex justify-center mt-10 px-3">
+        <div className="flex justify-center mt-10 xl:px-3">
           <div className="bg-white md:w-[600px] w-full flex items-center h-16 rounded-4xl px-4 shadow">
             <input
               type="text"
@@ -117,7 +117,7 @@ function Home() {
               className="flex-grow text-xl outline-none"
             />
 
-            <div className="bg-green-600 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-1 xl:py-2 lg:py-2 md:py-2 sm:py-1 py-1 rounded-3xl text-white text-xl font-bold">
+            <div className="bg-green-600 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-1 xl:py-2 lg:py-2 md:py-2 sm:py-1 py-1 rounded-3xl text-white xl:text-xl lg:text-lg md:text-lg sm:text-xs text-xs font-bold">
               Search
             </div>
           </div>
