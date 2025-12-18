@@ -109,19 +109,33 @@ function Home() {
         </h1>
 
         {/* SEARCH BAR */}
-        <div className="flex justify-center mt-10 xl:px-3">
-          <div className="bg-white md:w-[600px] w-full flex items-center h-16 rounded-4xl px-4 shadow">
-            <input
-              type="text"
-              placeholder="Eg: India"
-              className="flex-grow text-xl outline-none"
-            />
+       <div className="flex justify-center mt-10 px-3">
+  <div className="bg-white w-full max-w-[600px] flex items-center min-h-[48px] rounded-full px-3 sm:px-4 shadow">
 
-            <div className="bg-green-600 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-1 xl:py-2 lg:py-2 md:py-2 sm:py-1 py-1 rounded-3xl text-white xl:text-xl lg:text-lg md:text-lg sm:text-xs text-xs font-bold">
-              Search
-            </div>
-          </div>
-        </div>
+    {/* INPUT */}
+    <input
+      type="text"
+      placeholder="Eg: India"
+      className="flex-grow text-sm sm:text-base md:text-lg outline-none"
+    />
+
+    {/* BUTTON */}
+    <button className="
+      bg-green-600 
+      px-3 sm:px-4 md:px-6 
+      py-1.5 sm:py-2 
+      rounded-full 
+      text-white 
+      text-sm sm:text-base md:text-lg 
+      font-semibold
+      whitespace-nowrap
+    ">
+      Search
+    </button>
+
+  </div>
+</div>
+
 
       </div>
     </div>
